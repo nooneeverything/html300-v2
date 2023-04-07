@@ -18,11 +18,11 @@
     let array = [catsNumber, dogsNumber, birdsNumber, bugsNumber];
    
     // forEach() executes a function once for each element in an array
-   array.forEach(function(value, key){
+   const value = array.forEach(function(value, key){
      console.log("Value is " + value);
      //console.log("Key is " + key);
    });
-    
+ 
    // map() calls a function on each element in an array and creates new array with the results
    // this will add 15 to every  value 
    let array2 = array.map(function(value){
@@ -48,5 +48,13 @@
    // Handle output
     const output = document.getElementById('output')
     output.innerHTML = `${catsNumber} cats: ${dogsNumber} dogs: ${birdsNumber} birds: ${bugsNumber} bugs: ${sum2} animals total`
+    
+    const output2 = document.getElementById('output2')
+    output2.innerHTML = `Each value increased by 15: ${array2}<br>
+                         Each value greater than 20: ${array3}<br>
+                         Total sum of all animals: ${sum2}`
+                        
 
+
+   
  });
