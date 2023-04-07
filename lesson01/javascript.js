@@ -18,7 +18,7 @@
     let array = [catsNumber, dogsNumber, birdsNumber, bugsNumber];
    
     // forEach() executes a function once for each element in an array
-   const value = array.forEach(function(value, key){
+   array.forEach(function(value, key){
      console.log("Value is " + value);
      //console.log("Key is " + key);
    });
