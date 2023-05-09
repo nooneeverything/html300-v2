@@ -3,4 +3,93 @@
 @import 'settings.variables';
 @import 'settings.responsive';
 @import 'components.content';
+@import 'settings.mediaqueries';
+
+html {
+    box-sizing: border-box;
+}
+
+*,
+*:after,
+*:before {
+    box-sizing: inherit;
+}
+
+.main {
+  border: 40px solid $darkgray;
+  display: grid;
+  width: 75%;
+  height: 50%;
+  padding: 2rem;
+}
+
+.header{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    //position: relative;
+    //left: px;
+    &-image {
+        border-radius: 50%;
+        width: 25%;
+      
+      }
+}
+.info {
+  background-color: $gray;//gray
+  padding: 2rem;
+  display: inline-block; 
+  //grid-column-start: 2;
+  //grid-column-end: 3;
+  position: relative;
+  left: 400px;
+  bottom: 150px;
+  &-text {
+    color: $darkgray;
+  }
+  &-linkedin {
+    text-align: right;
+    position: relative;
+    bottom: 100px;
+    right: 200px;
+  }
+  &-linkedin img {
+    //float: left;
+  
+}
+}
+
+@media only screen and ($maxwidth) {
+    .info {
+        position: relative;
+        top: 450px;
+        right: 200px;
+        color: $darkgray;//pink
+    }
+    .main {
+        border: 1px solid $white;
+    }
+    
+    .header {
+        position: relative;
+        left: 250px;
+    }
+    
+    .header-image {
+        width: 90%;
+    }
+}
+
+
+h1 {
+   color: $dimgray;
+}
+
+p {
+    font-size: $fontsize;
+}
+
+b {
+    color: $dimgray;
+    font-size: $titlefontsize;
+}
 
