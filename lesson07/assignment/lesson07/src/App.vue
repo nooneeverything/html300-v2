@@ -4,37 +4,37 @@
       <b-nav class="navbar navbar-expand-lg navbar-light" style="background-color: #e3f2fd;">
                 <div class="container-fluid">
                   <a class="navbar-brand" href="#">Navbar</a>
-                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                  <b-button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                   <span class="navbar-toggler-icon"></span>
-                  </button>
+                  </b-button>
                   <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav p-4 align-middle">
                       <li class="nav-item">
                         <!-- Tooltip-->
-                        <a class="nav-link active" aria-current="page" href="/" data-toggle="tooltip" data-placement="bottom" title="Back to Homepage">Home</a>
+                        <router-link class="nav-link" to="/" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Back to Homepage">Home</router-link>
                       </li>
                       <!-- Tooltip -->
                       <li class="nav-item">
-                        <a class="nav-link" href="team" data-toggle="tooltip" data-placement="bottom" title="See Our Team">Team</a>
+                        <router-link class="nav-link" to="/team" data-bs-toggle="tooltip" data-bs-placement="bottom" title="See Our Team">Team</router-link>
                       </li>
                       <!-- Tooltip -->
                       <li class="nav-item">
-                        <a class="nav-link" href="aboutus" data-toggle="tooltip" data-placement="bottom" title="Learn More About Our Firm"f>About Us</a>
+                        <router-link class="nav-link" to="/aboutus" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Learn More About Our Firm">About Us</router-link>
                       </li>
                       <!-- Tooltip -->
                       <li class="nav-item">
-                        <a class="nav-link" href="contact"  data-toggle="tooltip" data-placement="bottom" title="Contact Information">Contact</a>
+                        <router-link class="nav-link" to="/contact" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Contact Informattion"> Contact</router-link>
                       </li>
-                      <!-- Tooltip -->
+                      <!-- Tooltip -->  
                       <li class="nav-item">
-                        <a class="nav-link" href="#" data-toggle="tooltip" data-placement="bottom" title="Unavaiable">Location</a>
+                        <router-link class="nav-link" to="/#" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Unavaiable">Locaion</router-link>
                       </li>
                     </ul>
                   </div>
                 </div>
-              </b-nav>
+        </b-nav>
               
-    <router-view> </router-view>
+   <router-view> </router-view>
   </div>
 </template>
 
