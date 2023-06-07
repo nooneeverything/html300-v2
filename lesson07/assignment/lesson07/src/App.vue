@@ -47,6 +47,16 @@
   </div>
 </template>
 
+<script>
+
+export default {
+  name: 'App',
+  components: {
+  }
+}
+</script>
+
+
 <style lang="scss">
 #app {
   font-family: "Times New Roman", Times, serif;
