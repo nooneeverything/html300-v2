@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-
+  <!-- Navigation Bar -->
   <div>
   <b-navbar toggleable="lg" type="light" variant="info">  
     <h1 class="text-center text-capitalize m-5"> Law Offices of Yema Measho </h1>
