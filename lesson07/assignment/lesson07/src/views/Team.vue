@@ -13,13 +13,13 @@
 </b-container>
 </template>
     
-    <script>
+  <script>
 
     export default {
       name: 'gallery', 
       data() {
         return {
-          images: [
+          images: [  
             { src: require('../assets/images/image1.jpg'), name: 'Roberta Evenson'},
             { src: require('../assets/images/image2.jpg'), name: 'Robert Peterson'},
             { src: require('../assets/images/image3.jpg'), name: 'Rebecca Stevens'},
@@ -29,4 +29,4 @@
       }
     }
     
-    </script>
+  </script>
