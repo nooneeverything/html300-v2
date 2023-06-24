@@ -17,7 +17,7 @@
   export default{
     name: "app",
     components:{  
-      Post },  
+      Post },
     data(){
       return{ 
         posts:[
