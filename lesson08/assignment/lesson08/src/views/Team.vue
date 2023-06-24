@@ -13,7 +13,7 @@
 </template>
 
 <script>
-  import Post from '../views/ImagePage.vue';
+  import Post from '../components/ImagePage.vue';
   export default{
     name: "app",
     components:{  
